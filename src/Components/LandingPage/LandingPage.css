@@ -1,0 +1,167 @@
+.LandingPage{
+    min-height: 120vh;
+    width: 100%;
+    background: linear-gradient(rgb(36, 95, 168), rgb(3, 27, 62));
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-container{
+    min-width: 94vw;
+    min-height: 90vh;
+    background-color: #FFFFFF;
+    position: relative;
+    border-top-left-radius: 3rem;
+}
+
+.mainContainer-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.bottomline{
+    width: 44.8rem;
+    height: 4.5rem;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.num1{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 1.3rem;
+    bottom: 1.3rem;
+}
+
+.num2{
+    width: 36rem;
+    height: 4.5rem;
+    background-color: #FFFFFF;
+}
+
+.num3{
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1.3rem;
+    bottom: 1.3rem;
+}
+
+.main-container-addon{
+    border-top-right-radius: 10px;
+    min-width: 3vw;
+    height: 16rem;
+    background-color: transparent;
+    position: relative;
+    top: -15rem;
+}
+
+.addon1{
+    border-top-right-radius: 10px;
+    width: 3rem;
+    height: 13rem;
+    background-color: #FFFFFF;
+}
+
+.addon2{
+    width: 6rem;
+    height: 6rem;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1.2rem;
+    bottom: -0rem;
+}
+
+.main-top-left{
+    position: absolute;
+    top: -3.4rem;
+    left: -5rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background:linear-gradient(to bottom right, #245EA7, #1E5499) ;
+    transform: rotate(45deg);
+}
+
+.content-container{
+    position: absolute;
+    width: 95%;
+    height: 80%;
+
+}
+
+.content-left{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-left img{
+    width: 55rem;
+    height: 44rem;
+    position: absolute;
+    bottom: -5.3rem;
+    left: -5rem;
+}
+
+.content-container{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width:992px) {
+    .content-left img{
+        width: 35rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width:768px) {
+    .content-container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .mainContainer-parent{
+        display: none;
+    }
+
+    .main-container-addon{
+        display: none;
+    }
+
+    .content-left{
+        display: none;
+    }
+
+    .LandingPage{
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+    }
+}
+  
